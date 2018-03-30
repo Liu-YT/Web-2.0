@@ -1,0 +1,39 @@
+h1 {
+	letter-spacing: 0.2em;
+	text-align: center;
+	font-weight: bold;
+	font-size: 22pt;
+	color: #A4A400;
+	background-color: #F0F0F0;
+	text-decoration: underline;
+	font-family: "Century Gothic";
+}
+
+body {background-image: url("picture/silverware.jpg");}
+
+header {
+	text-align: center;
+	font-weight: normal;
+	font-size: 18pt;
+	color: #A4A400;
+	font-family: "Century Gothic";
+}
+
+nav {
+    line-height:30px;
+    height: 50%;
+    width: 35%;
+    float:left;
+    padding:5px; 
+    color: #A4A400;
+}
+
+section {
+	float: right;
+	color: #A4A400;
+	height: 50%;
+    width: 60%;
+    float: left;
+    padding: 10px; 
+    text-align: left;
+}

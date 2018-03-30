@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title 注册
+    link(rel='stylesheet', href='/stylesheets/login.css')
+    script(type='text/javascript' src='https://code.jquery.com/jquery-2.1.4.min.js')
+    script(type='text/javascript' src='/javascripts/validator.js')
+    script(type='text/javascript' src='/javascripts/login.js')
+
+  body
+    #main
+      h1.text 用户登陆
+      #avatar
+      #login
+        form(method='post')
+          div.message
+            div.status
+            input#username.inputClass(type='text', name='username', placeholder="  用户名", value = user.username)
+            span.inputError #{error.username}
+          div.message
+            div.status
+            input#userpassword.inputClass(type='password', name='userpassword', placeholder='  密码',value = "")
+            span.inputError #{error.userpassword}
+      #buttonPosition
+        button.signin.buf 登陆
+        a(href='/regist') 
+            button.signup.buf.ableClick 注册

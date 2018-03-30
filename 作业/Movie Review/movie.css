@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("picture/background.png");
+  font-family: Verdana,Tahoma,sans-serif;
+  font-size: 8pt;
+}
+
+h1 {
+  font-family: Tahoma,Verdana,sans-serif;
+  text-align: center;
+  font-size: 24pt;
+}
+
+/*banner*/
+#banner {
+  background-image: url("picture/bannerbackground.png");
+  background-repeat: repeat-x;
+  text-align: center;
+  height: 50px;
+}
+
+/*content*/
+#content {
+  width: 800px;
+  margin:0 auto;
+  border: 4px gray solid;
+  overflow: hidden;
+}
+
+/*right content*/
+#right_content {
+  font-family:  Arial,sans-serif;
+  width: 250px;
+  float: right;
+  background-color: #A2B964;
+}
+
+dt {
+  font-weight: bold;
+  padding-top: 1em;
+  margin: 0 auto;
+}
+
+#special_case_of_dt {
+  padding-top: 0em;
+}
+
+#message {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+/*left content*/
+#left_content {
+  overflow: hidden;
+  width: 550px;
+}
+
+#title {
+  background-image: url("picture/rottenbackground.png");
+  background-repeat: repeat-x;
+  height: 83px;
+  width: 550px;
+}
+
+#rotton_img {
+  vertical-align: bottom;
+}
+
+#overall_rating {
+  font-size: 48pt;
+  font-weight: bold;
+  color: red;
+}
+
+#total_review {
+  font-size: 8pt;
+  color: white;
+}
+
+#left_review {
+  width: 47%;
+  float: left;
+  margin-left: 2%;
+  margin-right: 1%;
+}
+
+#right_review {
+  width: 47%;
+  float: right;
+  margin-left: 1%;
+  margin-right: 2%;
+}
+
+.Publication { font-style: italic; }
+
+p.comment {
+  border: 2px gray solid;
+  padding: 8px;
+  font-size: 8pt;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: #E1D697;
+}
+
+p.people {
+  margin-bottom: 3em;
+  overflow: hidden;
+}
+
+p img {
+  float: left;
+  padding-right: 5px;
+}
+
+#end {
+  clear: both;
+  padding: 5px;
+  margin: 0;
+  vertical-align: bottom;
+  background-color: #A2B964;
+  text-align: center;
+}
+
+#link {
+  border: 0;
+  position: fixed;
+  right: 0%;
+  bottom: 0%;
+}

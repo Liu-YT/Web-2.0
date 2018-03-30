@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    title 注册
+    link(rel='stylesheet', href='/stylesheets/regist.css')
+    script(type='text/javascript' src='https://code.jquery.com/jquery-2.1.4.min.js')
+    script(type='text/javascript' src='/javascripts/validator.js')
+    script(type='text/javascript' src='/javascripts/signup.js')
+
+  body
+    #main
+      h1.text 用户注册
+      #avatar
+      #regist
+        form(method='post')
+          div.message
+            div.status
+            input#username.inputClass(type='text', name='username', placeholder="  用户名", value = user.username)
+            span.inputError #{error.username}
+          div.message
+            div.status
+            input#userid.inputClass(type='text', name='userid', placeholder='  学号', value = user.userid)
+            span.inputError #{error.userid}
+          div.message
+            div.status
+            input#userphone.inputClass(type='text', name='userphone', placeholder='  电话',value = user.userphone)
+            span.inputError #{error.userphone}
+          div.message
+            div.status
+            input#useremail.inputClass(type='text', name='useremail', placeholder='  邮箱',value = user.useremail)
+            span.inputError #{error.useremail}
+          div.passwordBlock
+            span.passwordOnce
+              div.status
+              input#userpassword.inputClass(type='password', name='userpassword', placeholder='  密码',value = "")
+              span.inputError
+            span.passwordTwice
+              div.status
+              input#passwordTwice.inputClass(type='password', name='passwordCheck', placeholder='  请再次输入密码',value = "")
+              span.inputError
+      #buttonPosition
+        button.reset.buf 重置
+        button.submit.buf 提交
+      a(href='/') 
+        span 已有账号，直接登录

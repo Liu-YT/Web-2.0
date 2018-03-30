@@ -1,0 +1,261 @@
+body {
+    text-align: center;
+}
+
+#result {
+    margin: 0 auto;
+    width: 50%;
+    height: 30px;
+    color: red;
+    font-size: 18pt; 
+}
+
+#game {
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 810px;
+    height: 400px;
+}
+
+#template {
+    border: solid gray 1px;
+    float: left;
+    width: 360px;
+    height: 360px;
+    background-size: 360px 360px;
+    margin: 20px;
+}
+
+#gameBlock { 
+    position: relative;
+    background-color: gray;
+    float: left;
+    width: 360px;
+    height: 360px;
+    margin: 20px;
+}
+
+#gameBlock div {
+    float: left;
+    width: 88px;
+    height: 88px;
+    border: solid gray 1px;
+    background-size: 352px 352px;
+    transition: all 0.2s linear;
+}
+
+#gameBlock div:hover {
+    transform: scale(1.05);
+}
+
+.background_0 {
+    background: url("picture\\panda.jpg") no-repeat;
+}
+
+.background_1 {
+    background: url("picture\\man.jpg") no-repeat;
+}
+
+.background_2 {
+    background: url("picture\\panda_1.jpg") no-repeat;
+}
+
+.background_3 {
+    background: url("picture\\panda_2.jpg") no-repeat;
+}
+
+.section_0 {
+    cursor: pointer;
+    background-position: 0px 0px;
+}
+
+.section_1 {
+    cursor: pointer;
+    background-position: -88px 0px;;
+}
+
+.section_2 {
+    cursor: pointer;
+    background-position: -176px 0px;
+}
+
+.section_3 {
+    cursor: pointer;
+    background-position: -264px 0px;
+}
+
+.section_4 {
+    cursor: pointer;
+    background-position: 0px -88px;
+}
+
+.section_5 {
+    cursor: pointer;
+    background-position: -88px -88px;
+}
+
+.section_6 {
+    cursor: pointer;
+    background-position: -176px -88px;
+}
+
+.section_7 {
+    cursor: pointer;
+    background-position: -264px -88px;
+}
+
+.section_8 {
+    cursor: pointer;
+    background-position: 0px -176px;
+}
+
+.section_9 {
+    cursor: pointer;
+    background-position: -88px -176px;;
+}
+
+.section_10 {
+    cursor: pointer;
+    background-position: -176px -176px;
+}
+
+.section_11 {
+    cursor: pointer;
+    background-position: -264px -176px;
+}
+
+.section_12 {
+    cursor: pointer;
+    background-position: 0px -264px;
+}
+
+.section_13 {
+    cursor: pointer;
+    background-position: -88px -264px;
+}
+
+.section_14 {
+    cursor: pointer;
+    background-position: -176px -264px;
+}
+
+.section_15 {
+    opacity: 0;
+    background-color: rgb(233, 233, 233);
+}
+
+#position_0 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#position_1 {
+    position: absolute;
+    left: 90px;
+    top: 0px;
+}
+
+#position_2 {
+    position: absolute;
+    left: 180px;
+    top: 0px;
+}
+
+#position_3 {
+    position: absolute;
+    left: 270px;
+    top: 0px;
+}
+
+#position_4 {
+    position: absolute;
+    left: 0px;
+    top: 90px;
+}
+
+#position_5 {
+    position: absolute;
+    left: 90px;
+    top: 90px;
+}
+
+#position_6 {
+    position: absolute;
+    left: 180px;
+    top: 90px;
+}
+
+#position_7 {
+    position: absolute;
+    left: 270px;
+    top: 90px;
+}
+
+#position_8 {
+    position: absolute;
+    left: 0px;
+    top: 180px;
+}
+
+#position_9 {
+    position: absolute;
+    left: 90px;
+    top: 180px;
+}
+
+#position_10 {
+    position: absolute;
+    left: 180px;
+    top: 180px;
+}
+
+#position_11 {
+    position: absolute;
+    left: 270px;
+    top: 180px;
+}
+
+#position_12 {
+    position: absolute;
+    left: 0px;
+    top: 270px;
+}
+
+#position_13 {
+    position: absolute;
+    left: 90px;
+    top: 270px;
+}
+
+#position_14 {
+    position: absolute;
+    left: 180px;
+    top: 270px;
+}
+
+#position_15 {
+    position: absolute;
+    left: 270px;
+    top: 270px;
+}
+
+#contain {
+    width: 500px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+#changeBackground , #but {
+    margin: 50px;
+    float: left;
+    cursor: pointer;
+    font-size: 18pt;
+    color: white;
+    box-shadow: 2px 4px 6px #000;
+    line-height:50px;   
+    width: 150px;
+    height: 50px;
+    background-color: rgb(65, 132, 245);
+}

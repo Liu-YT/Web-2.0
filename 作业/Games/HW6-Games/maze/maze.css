@@ -1,0 +1,118 @@
+body {
+    text-align: center;
+}
+
+#result {
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 20pt;
+}
+
+#gameBlock {
+    overflow: hidden;
+}
+
+#maze {
+    margin: auto;
+    height: 285px;
+    width: 390px;
+}
+
+.obstacle {
+    background-color: rgb(211, 210, 210);
+}
+
+#topBlock {
+    border: solid 0.1px;
+    width: 99.6%;
+    height: 52px;
+}
+
+#leftBlock {
+    border: solid 0.1px;
+    border-top: none;
+   position: relative;
+    top: -1px;
+    height: 130px;
+    width: 105px; 
+    float: left;
+    z-index: 1;
+}
+
+#rightBlock {
+    border: solid 0.1px;
+    border-top: none;
+    position: relative;
+    top: -1px;
+    height: 130px;
+    width: 105px; 
+    float: right;
+    z-index: 1;  
+}
+
+#middleBlock {
+    border: solid 0.1px;
+    border-bottom: none;
+    margin: auto;
+    position: relative;
+    top: 48px;
+    height: 130px;
+    width: 90px;
+    z-index: 1;
+}
+
+#bottomBlock {
+    border: solid 0.1px;
+    position: relative;
+    top: 46px;
+    width: 99.6%;
+    height: 52px;
+}
+
+#start {
+    border-top: solid 5px white;
+    border-bottom: solid 5px white;
+    font-size: 20pt;
+    font-weight: bold;
+    background-color: rgb(56, 163, 56);
+    float: left;
+    width: 39px;
+    height: 39px;
+}
+
+#end {
+    border-top: solid 5px white;
+    border-bottom: solid 5px white;
+    font-size: 20pt;
+    font-weight: bold;
+    background-color: blueviolet;
+    float: right;
+    width: 39px;
+    height: 39px;
+}
+
+#wall {
+    border: solid 0.5px;
+    background-color: rgb(211, 210, 210);
+}
+
+#bottom_content {
+    margin: auto;
+    width: 410px;
+    height: 150px;
+    font-size: 13px;
+    text-align: left;
+}
+
+.wall_example {
+    margin: auto;
+    height: 20px;
+    width: 80px;
+}
+
+.new_obstacle {
+    background-color: red;
+}
+
+.gaming{  cursor: pointer; }

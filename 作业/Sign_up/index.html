@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Welcome</title>
+        <link href="index.css" type="text/css" rel="stylesheet" />
+        <script src="register.js" type='text/javascript'></script>
+        <script src="jquery-3.2.1.min.js" type='text/javascript'></script>
+    </head>
+    <body>
+        <div id="position">
+            <div id="loginBlock">
+                <form method="post">
+                    <h1>用户注册</h1>
+                    <span class="message">用户名:<input type="text" name="userName" placeholder="用户名" class="info"/><div class="state"></div></span>
+                    <span class="_name error"></span>
+                    <span class="message">学号  :  <input type="text" name="userId" placeholder="学号" class="info"/><div class="state"></div></span>
+                    <span class="_id error"></span>
+                    <span class="message">电话  :  <input type="text" name="userPhone" placeholder="电话" class="info"/><div class="state"></div></span>
+                    <span class="_phone error"></span>
+                    <span class="message">邮箱  :  <input type="text" name="userEmail" placeholder="电子邮箱" class="info"/><div class="state"></div></span>
+                    <span class="_email error"></span>
+                    <input type="reset" value="重置" class="but" id="reset">
+                    <input type="button" value="提交" class="but" id="_submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

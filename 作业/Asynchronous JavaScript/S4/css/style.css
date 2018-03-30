@@ -1,0 +1,236 @@
+/*General framework*/
+#at-plus-container {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#bottom-positioner {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*ancestor*/
+#button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50% 50% 50% 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/*  transition: property duration timing-function delay;*/
+/*@+button*/
+.apb {
+  overflow: hidden;
+  transition-property: all; 
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:#7789C5;
+  background-image: url("../image/atplus_white.png");
+  border-radius: 50% 50% 50% 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  -webkit-transition: all 0.5s ease 0.2s;
+  transition: all 0.5s ease 0.2s;
+}
+
+#button:hover .icon{
+  width: 80px;
+  height: 80px;
+  background-image: url("../image/atplus_green.png");
+  background-color:rgba(48, 63, 159, 1);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  -webkit-transition: all 0.5s ease 0.2s;
+  transition: all 0.5s ease 0.2s;
+}
+
+/*content of control-ring-container*/
+#control-ring-container {
+  height: 225px;
+  width: 225px;
+  border-radius: 50% 50% 50% 50%;
+  position: absolute;
+  top: -329%;
+  left: -323%;
+  
+  -webkit-transform: scale(0.13);
+  transform: scale(0.13);
+
+  -webkit-transition: all 0.5s ease 0.2s;
+  transition: all 0.5s ease 0.2s;
+}
+
+#button:hover #control-ring-container {
+  height: 225px;
+  width: 225px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  -webkit-transition: all 0.5s ease 0.2s;
+  transition: all 0.5s ease 0.2s;
+}
+
+/*Detailed content handling of control-ring-container*/
+.button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50% 50% 50% 50%;
+  background-color: rgb(192,192,192);
+  background-position: center;
+  font-size: 20pt;
+  text-align: center;
+  line-height: 40px;
+  background-color:rgba(48, 63, 159, 1);
+  color: rgb(33, 144, 131);
+}
+
+.random_A {
+  position: absolute;
+  top: 20%;
+  left: 6%;
+}
+
+.random_B {
+  position: absolute;
+  top: 44%;
+  left: 1%;
+}
+
+.random_C {
+  position: absolute;
+  top: 67%;
+  left: 10%;
+}
+
+.random_D {
+  position: absolute;
+  top: 81%;
+  left: 32%;
+}
+
+.random_E {
+  position: absolute;
+  top: 77%;
+  left: 60%;
+}
+
+.numPosition {
+  display: block;
+  position: absolute;
+  right: -15%;
+  top: -15%; 
+  width: 20px;
+  height: 20px;
+  color: white;
+  font-size: 10pt;
+  line-height: 20px;
+  text-align: center;
+  background-color: red;
+  border-radius: 50% 50% 50% 50%;
+}
+
+
+/*info-bar*/
+#info-bar {
+  width: 225px;
+  height: 225px;
+  position: absolute;
+  left: -325%;
+  top: -325%;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
+
+  -webkit-transform: scale(0.12);
+  transform: scale(0.12);
+
+  -webkit-transition: all 0.5s ease 0.2s;
+  transition: all 0.5s ease 0.2s;
+}
+
+.answerBlock {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: green;
+  text-align: center;
+  font-size: 25pt; 
+  line-height: 50px;
+}
+
+#button:hover #info-bar {
+  width: 155px;
+  height: 155px;
+  position: absolute;
+  top: -725%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+
+  -webkit-transition: all 0.5s ease 0.2s;
+  transition: all 0.5s ease 0.2s;
+}
+
+
+ul { padding: 0px; }
+
+li { list-style-type:none; }
+
+
+.comment { font-size: 40px; }
+
+.handPointer {
+  cursor: pointer;
+}
+
+.disable,.worked {
+  background-color: gray;
+}
+
+.able {
+  background-color: rgba(48, 63, 159, 1);
+}
+
+#clickOrder {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 400px;
+  color: red;
+  font-size: 25pt;
+  text-align: center;
+  line-height: 50px;
+}

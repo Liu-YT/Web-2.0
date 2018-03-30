@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title 注册
+    link(rel='stylesheet', href='/stylesheets/userDetail.css')
+    script(type='text/javascript' src='https://code.jquery.com/jquery-2.1.4.min.js')
+
+
+  body
+    #main
+      div.error #{error.msg}
+      h1.text 用户详情
+      #avatar
+        #userDetail
+
+      div.inputClass 用户名：#{user.username}
+
+     
+      div.inputClass 学号 ：#{user.userid}
+
+    
+      div.inputClass 电话 ：#{user.userphone}
+
+    
+      div.inputClass 邮箱 ：#{user.useremail}
+        
+      #buttonPosition
+        a(href='/layout') 
+          button#out.ableClick.buf 退出
